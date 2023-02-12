@@ -4,6 +4,8 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/42746
 
 from itertools import permutations
+# 순열
+# 시간복잡도 On(n!)
 
 # 내 솔루션
 def solution(numbers):
