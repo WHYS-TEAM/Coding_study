@@ -6,5 +6,5 @@
   * 그리고 간단한 설명 추가
 ## Reference
 * 파이썬 웹 IDE
-  * 주피터 노트북: https://jupyter.org/try
+  * 주피터 노트북 : https://jupyter.org/try
   * Replit : https://replit.com/languages/python3
