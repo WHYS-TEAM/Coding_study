@@ -34,7 +34,7 @@ def comparator(a,b):
 def solution(numbers):
     n = [str(x) for x in numbers]
     n = sorted(n, key=functools.cmp_to_key(comparator),reverse=True)
-    answer = ''.join(map(str, n))
+    answer = str(int(''.join(n)))
     return str(answer)
 # ref : https://wikidocs.net/109303
 
