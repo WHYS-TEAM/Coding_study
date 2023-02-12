@@ -7,4 +7,4 @@
 ## Reference
 * 파이썬 웹 IDE
   * 주피터 노트북: https://jupyter.org/try
-  * eplit : https://replit.com/languages/python3
+  * Replit : https://replit.com/languages/python3
