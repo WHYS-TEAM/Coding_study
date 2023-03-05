@@ -2,6 +2,7 @@
 접근 방법
  - 전체 케이스 탐색 문제 -> BFS, DFS
 https://school.programmers.co.kr/learn/courses/30/lessons/43165
+level2 탐색
 '''
 #BFS
 
