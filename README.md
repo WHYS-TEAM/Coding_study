@@ -8,3 +8,7 @@
 * 파이썬 웹 IDE
   * 주피터 노트북 : https://jupyter.org/try
   * Replit : https://replit.com/languages/python3
+  
+## TO-DO LIST
+* 23.03.05 : 최단거리 (BFS)
+> https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=python3
