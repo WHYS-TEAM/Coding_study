@@ -41,3 +41,16 @@
 - 콜라 문제(https://school.programmers.co.kr/learn/courses/30/lessons/132267, Level 1, 63%)
 - 2016년(https://school.programmers.co.kr/learn/courses/30/lessons/12901, Level 1, 63%)
 - 푸드 파이트 대회(https://school.programmers.co.kr/learn/courses/30/lessons/134240, Level1, 62%)
+
+
+
+## 3. 4월 2일(3주차)
+
+- 가장 가까운 같은 글자(https://school.programmers.co.kr/learn/courses/30/lessons/142086, Level 1, 63%)
+- 폰켓몬(https://school.programmers.co.kr/learn/courses/30/lessons/1845, Level 1, 62%)
+- 소수 찾기(https://school.programmers.co.kr/learn/courses/30/lessons/12921, Level 1, 60%)
+- 모의고사(https://school.programmers.co.kr/learn/courses/30/lessons/42840, Level 1,  60%)
+- 소수 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/12977, Level 1, 60%)
+- 실패율(https://school.programmers.co.kr/learn/courses/30/lessons/42889, Level 1, 59%)
+- 과일 장수(https://school.programmers.co.kr/learn/courses/30/lessons/135808, Level 1, 59%)
+- [1차] 다트 게임(https://school.programmers.co.kr/learn/courses/30/lessons/17682, Level 1, 58%)
