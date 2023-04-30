@@ -54,3 +54,25 @@
 - 실패율(https://school.programmers.co.kr/learn/courses/30/lessons/42889, Level 1, 59%)
 - 과일 장수(https://school.programmers.co.kr/learn/courses/30/lessons/135808, Level 1, 59%)
 - [1차] 다트 게임(https://school.programmers.co.kr/learn/courses/30/lessons/17682, Level 1, 58%)
+
+
+
+## 4. 4월 30일(4주차)
+
+- 추억 점수(https://school.programmers.co.kr/learn/courses/30/lessons/176963, Level 1, 61%)
+
+- 명예의 전당(1) (https://school.programmers.co.kr/learn/courses/30/lessons/138477, Level 1, 60%)
+
+- 카드 뭉치(https://school.programmers.co.kr/learn/courses/30/lessons/159994, Level 1, 57%)
+- 덧칠하기(https://school.programmers.co.kr/learn/courses/30/lessons/161989, Level 1, 56%)
+
+- 로또의 최고 순위와 최저 순위(https://school.programmers.co.kr/learn/courses/30/lessons/77484, Level 1, 56%)
+
+- 기사단원의 무기(https://school.programmers.co.kr/learn/courses/30/lessons/136798, Level 1, 55%)
+
+- 숫자 짝꿍(https://school.programmers.co.kr/learn/courses/30/lessons/131128, Level 1, 55%)
+
+- 체육복(https://school.programmers.co.kr/learn/courses/30/lessons/42862, Level 1, 54%)
+
+- 완주하지 못한 선수(https://school.programmers.co.kr/learn/courses/30/lessons/42576, Level 1, 54%)
+- 옹알이 (2)(https://school.programmers.co.kr/learn/courses/30/lessons/133499, Level 1, 53%)
