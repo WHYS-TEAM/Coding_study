@@ -76,3 +76,19 @@
 
 - 완주하지 못한 선수(https://school.programmers.co.kr/learn/courses/30/lessons/42576, Level 1, 54%)
 - 옹알이 (2)(https://school.programmers.co.kr/learn/courses/30/lessons/133499, Level 1, 53%)
+
+
+
+## 5. 5월 28일(5주차)
+
+- 완주하지 못한 선수(https://school.programmers.co.kr/learn/courses/30/lessons/42576, Level 1, 54%)
+- 문자열 나누기(https://school.programmers.co.kr/learn/courses/30/lessons/140108, Level 1,  51%)
+- 크레인 인형뽑기 게임(https://school.programmers.co.kr/learn/courses/30/lessons/64061,  Level 1, 50%)
+- 키패드 누르기(https://school.programmers.co.kr/learn/courses/30/lessons/67256, Level 1, 50%)
+- 신규 아이디 추천(https://school.programmers.co.kr/learn/courses/30/lessons/72410, Level 1, 49%)
+- 대충 만든 자판(https://school.programmers.co.kr/learn/courses/30/lessons/160586, Level 1, 48%)
+- 둘만의 암호(https://school.programmers.co.kr/learn/courses/30/lessons/155652, Level 1, 48%)
+- 햄버거 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/133502, Level 1, 46%)
+- 성격 유형 검사하기(https://school.programmers.co.kr/learn/courses/30/lessons/118666, Level 1, 45%)
+- 달리기 경주(https://school.programmers.co.kr/learn/courses/30/lessons/178871, Level 1, 39%)
+- 바탕화면 정리(https://school.programmers.co.kr/learn/courses/30/lessons/161990, Level 1, 38%)
