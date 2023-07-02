@@ -1,3 +1,6 @@
+# 그리디 서치 적용해서 우선 맨 앞을 맞추고 모든 좌우 조합 탐색 후 최소 이동 리턴함
+# 다이얼 돌리듯이 기본 'AAA'랑 타켓 'JAZ'을 데큐로 로테이트 시키면서 0번 인덱스 끼리 비교해서 같으면 냅두고 다르면 타겟 알파벳으로 바꿔줌
+
 from collections import deque
 from itertools import product
 
