@@ -92,3 +92,16 @@
 - 성격 유형 검사하기(https://school.programmers.co.kr/learn/courses/30/lessons/118666, Level 1, 45%)
 - 달리기 경주(https://school.programmers.co.kr/learn/courses/30/lessons/178871, Level 1, 39%)
 - 바탕화면 정리(https://school.programmers.co.kr/learn/courses/30/lessons/161990, Level 1, 38%)
+
+
+
+## 6. 8월 6일(7주차)
+
+- 최댓값과 최솟값(https://school.programmers.co.kr/learn/courses/30/lessons/12939, Level 2, 79%)
+- JadenCase 문자열 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/12951, Level 2, 77%)
+- 최솟값 만들기(https://school.programmers.co.kr/learn/courses/30/lessons/12941, Level 2, 76%)
+- 올바른 괄호(https://school.programmers.co.kr/learn/courses/30/lessons/12909, Level 2, 76%)
+- 이진 변환 반복하기(https://school.programmers.co.kr/learn/courses/30/lessons/70129, Level 2, 76%)
+- 숫자의 표현(https://school.programmers.co.kr/learn/courses/30/lessons/12924, Level 2, 74%)
+- 다음 큰 숫자(https://school.programmers.co.kr/learn/courses/30/lessons/12911, Level 2, 73%)
+- 피보나치 수(https://school.programmers.co.kr/learn/courses/30/lessons/12945, Level 2. 72%)
