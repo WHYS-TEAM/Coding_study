@@ -14,7 +14,7 @@ def solution(n, words):
     
     # 첫번째 검사 : 앞 뒤
     for i in range(len(words)):
-        if i > 1 :
+        if i > 0 :
             if words[i][0] == words[i-1][-1]:
                 pass
             elif words[i][0] != words[i-1][-1] :
