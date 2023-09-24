@@ -105,3 +105,9 @@
 - 숫자의 표현(https://school.programmers.co.kr/learn/courses/30/lessons/12924, Level 2, 74%)
 - 다음 큰 숫자(https://school.programmers.co.kr/learn/courses/30/lessons/12911, Level 2, 73%)
 - 피보나치 수(https://school.programmers.co.kr/learn/courses/30/lessons/12945, Level 2. 72%)
+
+
+
+## 7. 9월 24일(8주차)
+
+- 짝지어 제거하기(https://school.programmers.co.kr/learn/courses/30/lessons/12973, Level 2, 71%)
