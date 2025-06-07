@@ -24,6 +24,7 @@ def max_diff_of_two_subarrays(nums: List[int]) -> int:
     for i in range(n):
         current = min(nums[i], current + nums[i])
         min_sum = min(min_sum, current)
+        # 각 인덱스마다 기록
         left_min[i] = min_sum
 
     # 2. 오른쪽 최대 서브배열 합 저장 (역순으로)
@@ -39,6 +40,7 @@ def max_diff_of_two_subarrays(nums: List[int]) -> int:
     for i in range(n - 1, -1, -1):
         current = max(nums[i], current + nums[i])
         max_sum = max(max_sum, current)
+        # 각 인덱스마다 기록
         right_max[i] = max_sum
 
     # 3. 구간 나누기: left [0..i], right [i+1..n-1]
