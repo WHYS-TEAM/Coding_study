@@ -30,6 +30,12 @@ def max_diff_of_two_subarrays(nums: List[int]) -> int:
     right_max = [0] * n
     max_sum = float('-inf')
     current = 0
+    '''
+    i를 n-1부터 0까지 1씩 감소시키며 반복
+    start = n-1 : 시작값
+    stop = -1 : 반복 종료 조건 (종료값은 포함되지 않음, 즉 0까지 포함됨)
+    step = -1 : 1씩 감소
+    '''
     for i in range(n - 1, -1, -1):
         current = max(nums[i], current + nums[i])
         max_sum = max(max_sum, current)
