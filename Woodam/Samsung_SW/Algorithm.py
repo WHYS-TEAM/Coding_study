@@ -57,6 +57,7 @@ if __name__ == "__main__":
 # Python translations of common graph algorithms and data structures
 
 # 2. Floyd-Warshall
+# 모든 지점에서 최단거리 구하기기
 # https://velog.io/@kimdukbae/플로이드-워셜-알고리즘-Floyd-Warshall-Algorithm
 # https://namu.wiki/w/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 INF = 987654
@@ -76,6 +77,7 @@ for i in range(1, V + 1):
     print(*adj[i][1:])
 
 # 3. Bellman-Ford
+# 다익스트라 + 음수 간선 
 # https://namu.wiki/w/%EB%B2%A8%EB%A8%BC-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 # https://velog.io/@kimdukbae/알고리즘-벨만-포드-알고리즘-Bellman-Ford-Algorithm
 INF = 98765
@@ -98,6 +100,7 @@ for s, e, c in edges:
 print(-1 if flag else ' '.join(map(str, dist[1:])))
 
 # 4. Dijkstra
+# 한 개의 지점에서 최단거리 구하기기
 # https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 import heapq
 INF = 99999999
@@ -118,6 +121,7 @@ while pq:
 print(*dist[1:])
 
 # 5. Lowest Common Ancestor (LCA)
+# 공통된 조상 구하기. DFS로 Tracking 이후 깊이를 맞추면 된다. 
 # https://velog.io/@mjieun/Algorithm-최소-공통-조상Lowest-Common-Ancestor-LCA-Python
 # https://stonejjun.tistory.com/63
 from collections import deque
@@ -157,7 +161,7 @@ print(lca(7, 13))
 # 6. Binary Lifting
 # https://deepdata.tistory.com/965
 # https://velog.io/@semoon/Python-LCA%EC%99%80-Binary-Lifting
-# LCA에서 2^N 단위로 올라가는걸 뜻함
+# LCA에서 2^N 단위로 올라가는걸 뜻함. 시간복잡도가 O(NM) → O(MlogN)으로 변환
 d = [[0] * 15 for _ in range(10)]
 for i in range(1, 11):
     d[0][i] = i + 1
@@ -199,6 +203,8 @@ for s, e, c in edges:
 print(cost)
 
 # 8. Topological Sort
+# 진입차수 0인것 부터 큐(Queue)에 넣고 다시 Pop하면서 간선 제거. 차례대로 계속 반복
+# 이후 큐에서 뺀 순서 대로 정리하면 위상 정렬
 # https://velog.io/@kimdukbae/위상-정렬-Topological-Sorting
 # https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
 from collections import deque
