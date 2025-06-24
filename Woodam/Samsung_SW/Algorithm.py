@@ -11,6 +11,8 @@
 10. Binary Lifting
 '''
 # 1. TSP + 비트마스킹
+# https://konkukcodekat.tistory.com/140
+# https://namu.wiki/w/%EC%99%B8%ED%8C%90%EC%9B%90%20%EC%88%9C%ED%9A%8C%20%EB%AC%B8%EC%A0%9C
 import sys
 
 INF = 9_876_543  # Java 코드의 9876543 그대로 사용
@@ -55,6 +57,8 @@ if __name__ == "__main__":
 # Python translations of common graph algorithms and data structures
 
 # 2. Floyd-Warshall
+# https://velog.io/@kimdukbae/플로이드-워셜-알고리즘-Floyd-Warshall-Algorithm
+# https://namu.wiki/w/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 INF = 987654
 V, E = map(int, input().split())
 adj = [[INF] * (V + 1) for _ in range(V + 1)]
@@ -72,6 +76,8 @@ for i in range(1, V + 1):
     print(*adj[i][1:])
 
 # 3. Bellman-Ford
+# https://namu.wiki/w/%EB%B2%A8%EB%A8%BC-%ED%8F%AC%EB%93%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
+# https://velog.io/@kimdukbae/알고리즘-벨만-포드-알고리즘-Bellman-Ford-Algorithm
 INF = 98765
 V, E = map(int, input().split())
 dist = [INF] * (V + 1)
@@ -92,6 +98,7 @@ for s, e, c in edges:
 print(-1 if flag else ' '.join(map(str, dist[1:])))
 
 # 4. Dijkstra
+# https://namu.wiki/w/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
 import heapq
 INF = 99999999
 V, E = map(int, input().split())
@@ -111,6 +118,8 @@ while pq:
 print(*dist[1:])
 
 # 5. Lowest Common Ancestor (LCA)
+# https://velog.io/@mjieun/Algorithm-최소-공통-조상Lowest-Common-Ancestor-LCA-Python
+# https://stonejjun.tistory.com/63
 from collections import deque
 N = int(input())
 parent = [[0] * (N + 1) for _ in range(10)]
@@ -145,7 +154,27 @@ def lca(a, b):
 print(lca(6, 3))
 print(lca(7, 13))
 
-# 6. Kruskal's Algorithm
+# 6. Binary Lifting
+# https://deepdata.tistory.com/965
+# https://velog.io/@semoon/Python-LCA%EC%99%80-Binary-Lifting
+# LCA에서 2^N 단위로 올라가는걸 뜻함
+d = [[0] * 15 for _ in range(10)]
+for i in range(1, 11):
+    d[0][i] = i + 1
+for k in range(1, 10):
+    for i in range(1, 11):
+        d[k][i] = d[k - 1][d[k - 1][i]]
+N = 5
+num = 1
+for k in range(9, -1, -1):
+    if N >= (1 << k):
+        N -= (1 << k)
+        num = d[k][num]
+print(num)
+
+# 7. Kruskal's Algorithm
+# 간선을 오름차순 한 뒤 Greedy 알고리즘 적용. 순환성 있는 경우에만 제거
+# https://velog.io/@sy508011/그래프-알고리즘-크루스칼-알고리즘-Kruskal-Algorithm
 V, E = map(int, input().split())
 p = [i for i in range(V + 1)]
 edges = [tuple(map(int, input().split())) for _ in range(E)]
@@ -169,7 +198,9 @@ for s, e, c in edges:
             break
 print(cost)
 
-# 7. Topological Sort
+# 8. Topological Sort
+# https://velog.io/@kimdukbae/위상-정렬-Topological-Sorting
+# https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
 from collections import deque
 V, E = map(int, input().split())
 edges = [[] for _ in range(V + 1)]
@@ -187,7 +218,7 @@ while q:
         if ind[next] == 0:
             q.append(next)
 
-# 8. Segment Tree (Index Tree)
+# 9. Segment Tree (Index Tree)
 arr = [3, 2, 4, 5, 1, 6, 2, 7]
 N = len(arr)
 tree = [0] * (N * 4)
@@ -214,7 +245,7 @@ def update(node, start, end, idx, diff):
         update(node * 2, start, mid, idx, diff)
         update(node * 2 + 1, mid + 1, end, idx, diff)
 
-# 9. Lazy Propagation
+# 10. Lazy Propagation
 lazy = [0] * (N * 4)
 def propagate(node, start, end):
     if lazy[node] != 0:
@@ -246,17 +277,3 @@ def lazy_update(node, start, end, left, right, diff):
     lazy_update(node * 2 + 1, mid + 1, end, left, right, diff)
     tree[node] = tree[node * 2] + tree[node * 2 + 1]
 
-# 10. Binary Lifting
-d = [[0] * 15 for _ in range(10)]
-for i in range(1, 11):
-    d[0][i] = i + 1
-for k in range(1, 10):
-    for i in range(1, 11):
-        d[k][i] = d[k - 1][d[k - 1][i]]
-N = 5
-num = 1
-for k in range(9, -1, -1):
-    if N >= (1 << k):
-        N -= (1 << k)
-        num = d[k][num]
-print(num)
