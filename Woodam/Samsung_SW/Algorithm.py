@@ -225,6 +225,9 @@ while q:
             q.append(next)
 
 # 9. Segment Tree (Index Tree)
+# 구간의 합, 최댓값, 최소을 O(n)보다 작은 O(log n)으로 더하기 위한 방법 
+# 배열을 트리화 한 다음 미리 구간들의 합을 만든다.
+# https://velog.io/@kimdukbae/자료구조-세그먼트-트리-Segment-Tree
 arr = [3, 2, 4, 5, 1, 6, 2, 7]
 N = len(arr)
 tree = [0] * (N * 4)
@@ -252,6 +255,10 @@ def update(node, start, end, idx, diff):
         update(node * 2 + 1, mid + 1, end, idx, diff)
 
 # 10. Lazy Propagation
+# 세그먼트 트리에서 업데이트 할때 계산량이 증가하는 것을 막기위한 방법
+# 미리 변수를 만들었다가 방문할때만 업데이트를 시킨다.
+# https://velog.io/@gmtmoney2357/느리게-갱신되는-세그먼트-트리
+# https://rccode.tistory.com/190
 lazy = [0] * (N * 4)
 def propagate(node, start, end):
     if lazy[node] != 0:
