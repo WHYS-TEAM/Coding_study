@@ -130,21 +130,23 @@ graph = [[] for _ in range(V + 1)]
 for _ in range(E):
     s, e, c = map(int, input().split())
     graph[s].append((e, c))
-
+# 1. 거리 배열 초기화 (무한대)    
 dist = [INF] * (V + 1)
-dist[1] = 0                              # 시작 정점 1
+# 2. 시작점은 거리 0
+dist[1] = 0                             
 
+# 우선선순위 
 pq = [(0, 1)]                            # (거리, 정점)
 
 while pq:
     cur_d, u = heapq.heappop(pq)
     if cur_d > dist[u]:                  # stale entry
         continue
-    # u 와 연결된 간선 Relax
-    for v, w in graph[u]:
-        if dist[v] > cur_d + w:
-            dist[v] = cur_d + w
-            heapq.heappush(pq, (dist[v], v))
+    # 연결된 모든 간선 확인
+    for v, w in graph[u]: # u → v 거리 w
+        if dist[v] > cur_d + w:  # 더 짧은 경로 발견 시
+            dist[v] = cur_d + w # 거리 갱신
+            heapq.heappush(pq, (dist[v], v)) # 새 경로 추가
 
 print(*dist[1:])
 
