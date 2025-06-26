@@ -101,13 +101,13 @@ for _ in range(E):
 
 dist[1] = 0                  # 임의의 시작 정점 = 1
 
-# (V-1)번 Relaxation → 최단 거리 수렴
+# (V-1)번 반복하면서 최소값 갱신
 for _ in range(V - 1):
     for s, e, c in edges:
         if dist[s] != INF:
             dist[e] = min(dist[e], dist[s] + w)
 
-# **추가 1회** Relaxation 으로 갱신되면 음수 사이클 존재
+# 음수 사이클 체크 
 has_cycle = False
 for s, e, c in edges:
     if dist[s] != INF and dist[e] > dist[s] + c:
