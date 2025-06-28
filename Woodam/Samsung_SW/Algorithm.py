@@ -181,6 +181,7 @@ print(num)
 # https://velog.io/@sy508011/그래프-알고리즘-크루스칼-알고리즘-Kruskal-Algorithm
 # Uino-find 알고리즘 설명
 # https://gmlwjd9405.github.io/2018/08/31/algorithm-union-find.html 
+# https://velog.io/@ywc8851/알고리즘-Union-Find-알고리즘
 V, E = map(int, input().split())
 p = [i for i in range(V + 1)]
 edges = [tuple(map(int, input().split())) for _ in range(E)]
