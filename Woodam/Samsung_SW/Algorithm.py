@@ -179,6 +179,8 @@ print(num)
 # 7. Kruskal's Algorithm
 # 간선을 오름차순 한 뒤 Greedy 알고리즘 적용. 순환성 있는 경우에만 제거
 # https://velog.io/@sy508011/그래프-알고리즘-크루스칼-알고리즘-Kruskal-Algorithm
+# Uino-find 알고리즘 설명
+# https://gmlwjd9405.github.io/2018/08/31/algorithm-union-find.html 
 V, E = map(int, input().split())
 p = [i for i in range(V + 1)]
 edges = [tuple(map(int, input().split())) for _ in range(E)]
